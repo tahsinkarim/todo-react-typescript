@@ -4,17 +4,25 @@ export interface Todo {
   isDone: boolean;
 }
 
-type Actions =
-  | { type: "add"; payload: string }
-  | { type: "remove"; payload: number }
-  | { type: "done"; payload: number };
+// type Actions =
+//   | { type: "add"; payload: string }
+//   | { type: "remove"; payload: number }
+//   | { type: "done"; payload: number };
 
-const TodoReducer = (state: Todo[], action: Actions) => {};
+// const TodoReducer = (state: Todo[], action: Actions) => {
+//   switch (action.type) {
+//     case "add":
+//       return [
+//         ...state,
+//         {id: Date.now(), todo: action.payload, isDone: false}
+//       ]
+//   }
+// };
 
-import { useReducer } from "react";
+// import { useReducer } from "react";
 
-const ReducerExample = () => {
-  const [state, dispatch] = useReducer(TodoReducer, []);
+// const ReducerExample = () => {
+//   const [state, dispatch] = useReducer(TodoReducer, []);
 
-  return <div />;
-};
+//   return <div />;
+// };
